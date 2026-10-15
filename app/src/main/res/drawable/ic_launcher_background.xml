@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="108"
+                android:endY="108"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#061936" />
+                <item android:offset="0.5" android:color="#0C3D7A" />
+                <item android:offset="1.0" android:color="#1765B3" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Subtle tactical radial radar concentric rings -->
+    <path
+        android:pathData="M54,18 A36,36 0 1,0 54,90 A36,36 0 1,0 54,18"
+        android:strokeWidth="0.8"
+        android:strokeColor="#254F82E2"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M54,30 A24,24 0 1,0 54,78 A24,24 0 1,0 54,30"
+        android:strokeWidth="0.8"
+        android:strokeColor="#304F82E2"
+        android:fillColor="#00000000" />
+</vector>

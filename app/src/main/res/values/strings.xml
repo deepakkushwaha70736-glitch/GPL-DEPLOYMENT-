@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hathras Police GPL</string>
+    <string name="app_subtitle">GPL Wireless Deployment Lookup</string>
+    <string name="search_placeholder_set">उदाहरण: C4110644</string>
+    <string name="search_placeholder_ani">उदाहरण: 861029 या 865055</string>
+    <string name="search_placeholder_place">उदाहरण: KOTWALI या SASNI</string>
+    <string name="search_placeholder_all">Set Number, ANI या जगह — सभी search करें</string>
+    <string name="hint_set">Exact और partial Set Number / Equipment Code search</string>
+    <string name="hint_ani">Exact और partial ANI Number search</string>
+    <string name="hint_place">थाना / जगह का पूरा या partial नाम search</string>
+    <string name="hint_all">एक ही box से Set Number, ANI Number और जगह/थाना search करें</string>
+    <string name="entries_stat">Deployment Entries</string>
+    <string name="codes_stat">Set/Equipment Codes</string>
+    <string name="matches_stat">Current Matches</string>
+    <string name="tab_search">Lookup</string>
+    <string name="tab_directory">Directory</string>
+    <string name="tab_bookmarks">Saved</string>
+    <string name="tab_guide">Radio Guide</string>
+</resources>

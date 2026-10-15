@@ -1,0 +1,6 @@
+{
+  "name": "Hathras Police GPL",
+  "description": "GPL wireless communication deployment lookup for Hathras Police — search Kenwood NX3720 / NX3220 sets, ANI codes, and police stations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
