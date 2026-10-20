@@ -155,6 +155,28 @@ fun DeploymentDetailBottomSheet(
                         color = PoliceBlue100.copy(alpha = 0.8f),
                         fontWeight = FontWeight.SemiBold
                     )
+
+                    if (!deployment.distanceFromDcr.isNullOrBlank() || !deployment.antennaHeightFeet.isNullOrBlank()) {
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                            deployment.distanceFromDcr?.let { dist ->
+                                Text(
+                                    text = "📍 DCR Distance: $dist",
+                                    fontSize = 12.sp,
+                                    color = PoliceGold,
+                                    fontWeight = FontWeight.Bold
+                                )
+                            }
+                            deployment.antennaHeightFeet?.let { height ->
+                                Text(
+                                    text = "🗼 Antenna Height: $height",
+                                    fontSize = 12.sp,
+                                    color = Color.White,
+                                    fontWeight = FontWeight.Bold
+                                )
+                            }
+                        }
+                    }
                 }
             }
 
@@ -306,6 +328,8 @@ fun DeploymentDetailBottomSheet(
                 SpecRow("Pneumatic Mast", deployment.pneumaticMast)
                 SpecRow("Spare Battery / Charger", deployment.suBattsCharger)
                 SpecRow("PA (Public Address) System", deployment.paSystem)
+                deployment.distanceFromDcr?.let { SpecRow("Distance from DCR (KM)", it) }
+                deployment.antennaHeightFeet?.let { SpecRow("Antenna Mast Height (FT)", it) }
                 if (!deployment.remarks.isNullOrBlank()) {
                     SpecRow("Officer Remarks", deployment.remarks)
                 }
@@ -360,11 +384,18 @@ fun DeploymentDetailBottomSheet(
 
 @Composable
 private fun SpecRow(title: String, value: String?) {
+    val hasValue = !value.isNullOrBlank()
+    val cleanValue = if (hasValue) {
+        val trimmed = value!!.trim()
+        if (trimmed == "01") "1" else trimmed
+    } else null
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(vertical = 4.dp),
-        horizontalArrangement = Arrangement.SpaceBetween
+            .padding(vertical = 5.dp),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
             text = title,
@@ -372,11 +403,27 @@ private fun SpecRow(title: String, value: String?) {
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             fontWeight = FontWeight.SemiBold
         )
-        Text(
-            text = value ?: "—",
-            fontSize = 12.sp,
-            color = if (value != null) PoliceNavy900 else Color.Gray,
-            fontWeight = FontWeight.ExtraBold
-        )
+        if (hasValue) {
+            Box(
+                modifier = Modifier
+                    .clip(RoundedCornerShape(6.dp))
+                    .background(PoliceNavy900)
+                    .padding(horizontal = 8.dp, vertical = 2.dp)
+            ) {
+                Text(
+                    text = if (cleanValue?.all { it.isDigit() } == true) "$cleanValue unit" else (cleanValue ?: "1"),
+                    fontSize = 11.sp,
+                    color = PoliceGold,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        } else {
+            Text(
+                text = "—",
+                fontSize = 12.sp,
+                color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.4f),
+                fontWeight = FontWeight.Bold
+            )
+        }
     }
 }

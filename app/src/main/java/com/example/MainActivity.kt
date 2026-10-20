@@ -167,7 +167,8 @@ class MainActivity : ComponentActivity() {
                             )
 
                             1 -> DirectoryScreen(
-                                contacts = viewModel.directoryContacts
+                                contacts = viewModel.directoryContacts,
+                                stationDistances = viewModel.stationDistancesHeights
                             )
 
                             2 -> AboutUsScreen(
@@ -229,6 +230,8 @@ class MainActivity : ComponentActivity() {
             }
             d.stMobSetNX3720?.let { append("NX3720 Base/Mob: $it\n") }
             d.hhSetNX3220?.let { append("NX3220 Handheld: $it\n") }
+            d.distanceFromDcr?.let { append("Distance from DCR: $it\n") }
+            d.antennaHeightFeet?.let { append("Antenna Height: $it\n") }
             d.powerSupply?.let { append("Power Supply: $it\n") }
             d.battery12V?.let { append("12V Battery: $it\n") }
             d.paSystem?.let { append("PA System: $it\n") }

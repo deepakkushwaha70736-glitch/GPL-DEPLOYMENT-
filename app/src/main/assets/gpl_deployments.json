@@ -1,7 +1,7 @@
 [
   {
     "slNo": 1,
-    "pdfPage": 1,
+    "pdfPage": "1",
     "location": "DM CAMP OFFICE",
     "stMobSetNX3720": "C4110626",
     "antenna": {
@@ -19,6 +19,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "06 KM",
+    "antennaHeightFeet": "15 FT",
     "equipmentCodes": [
       "C4110626"
     ],
@@ -31,11 +33,12 @@
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 2,
-    "pdfPage": 1,
+    "pdfPage": "1",
     "location": "DM RESI.",
     "stMobSetNX3720": "C4210254",
     "antenna": {
@@ -53,6 +56,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "06 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C4210254"
     ],
@@ -65,11 +70,12 @@
         "pdfPage": 5,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 3,
-    "pdfPage": 1,
+    "pdfPage": "1",
     "location": "COLLECTRATE CONT.",
     "stMobSetNX3720": "C3C10780",
     "antenna": {
@@ -87,6 +93,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3C10780"
     ],
@@ -99,12 +107,13 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 4,
-    "pdfPage": 1,
-    "location": "DM MOB. 1",
+    "pdfPage": "1",
+    "location": "DM MOB. 1 UP86 G 0163",
     "stMobSetNX3720": "C4110581",
     "antenna": {
       "0 db GP": null,
@@ -121,6 +130,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4110581",
       "C3216160"
@@ -142,12 +153,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 5,
-    "pdfPage": 1,
-    "location": "DM MOB 2",
+    "pdfPage": "1",
+    "location": "DM MOB 2 UP86 G 0264",
     "stMobSetNX3720": "C4111723",
     "antenna": {
       "0 db GP": null,
@@ -164,6 +176,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111723"
     ],
@@ -176,15 +190,16 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 6,
-    "pdfPage": 1,
+    "pdfPage": "1",
     "location": "SP RESI. T DUTY",
     "stMobSetNX3720": "C3510917",
     "antenna": {
-      "0 db GP": "02",
+      "0 db GP": "03",
       "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
@@ -198,6 +213,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "06 KM",
+    "antennaHeightFeet": "84 FT",
     "equipmentCodes": [
       "C3510917"
     ],
@@ -210,13 +227,14 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 7,
-    "pdfPage": 1,
+    "pdfPage": "1",
     "location": "SP RESI. CHAMBER",
-    "stMobSetNX3720": "C4110534",
+    "stMobSetNX3720": "C4110186",
     "antenna": {
       "0 db GP": null,
       "3 db GP": null,
@@ -224,7 +242,7 @@
       "Whip Antenna": null
     },
     "powerSupply": "01",
-    "battery12V": null,
+    "battery12V": "01",
     "tMast": null,
     "giPole": null,
     "pneumaticMast": null,
@@ -232,23 +250,26 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "06 KM",
+    "antennaHeightFeet": "84 FT",
     "equipmentCodes": [
-      "C4110534"
+      "C4110186"
     ],
     "aniRecords": [
       {
-        "slNo": 30,
-        "setNumber": "C4110534",
-        "ani": "861023",
+        "slNo": 29,
+        "setNumber": "C4110186",
+        "ani": "861088",
         "whereDeployed": null,
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 8,
-    "pdfPage": 1,
+    "pdfPage": "1",
     "location": "SP OFFICE",
     "stMobSetNX3720": "C4111656",
     "antenna": {
@@ -266,6 +287,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "01 KM",
+    "antennaHeightFeet": "70 FT",
     "equipmentCodes": [
       "C4111656"
     ],
@@ -278,12 +301,13 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 9,
-    "pdfPage": 1,
-    "location": "SP HTS MOB",
+    "pdfPage": "1",
+    "location": "SP HTS MOB UP32 BG 4588",
     "stMobSetNX3720": "C4111652",
     "antenna": {
       "0 db GP": null,
@@ -300,6 +324,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111652",
       "C3911623"
@@ -321,18 +347,19 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 10,
-    "pdfPage": 1,
-    "location": "SP BOLERO",
-    "stMobSetNX3720": "C411O641",
+    "pdfPage": "1",
+    "location": "SP BOLERO UP 70 AG 4295",
+    "stMobSetNX3720": "C4110641",
     "antenna": {
       "0 db GP": null,
       "3 db GP": null,
-      "0 db Magnetic": null,
-      "Whip Antenna": "01"
+      "0 db Magnetic": "01",
+      "Whip Antenna": null
     },
     "powerSupply": null,
     "battery12V": null,
@@ -343,15 +370,28 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
+      "C4110641",
       "C411O641"
     ],
-    "aniRecords": []
+    "aniRecords": [
+      {
+        "slNo": 34,
+        "setNumber": "C4110641",
+        "ani": "861050",
+        "whereDeployed": null,
+        "pdfPage": 2,
+        "source": "NX3720 ANI PDF"
+      }
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 11,
-    "pdfPage": 1,
-    "location": "SP INNOVA",
+    "pdfPage": "1",
+    "location": "SP INNOVA UP 70 AG 3740",
     "stMobSetNX3720": "C4110638",
     "antenna": {
       "0 db GP": null,
@@ -368,6 +408,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4110638"
     ],
@@ -380,12 +422,13 @@
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 12,
-    "pdfPage": 1,
-    "location": "SP ESCORT MOB.",
+    "pdfPage": "1",
+    "location": "SP ESCORT MOB. UP 32 AG 3907",
     "stMobSetNX3720": "C4210564",
     "antenna": {
       "0 db GP": null,
@@ -402,6 +445,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4210564"
     ],
@@ -414,11 +459,12 @@
         "pdfPage": 5,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 13,
-    "pdfPage": 1,
+    "pdfPage": "1",
     "location": "ASP RESI.",
     "stMobSetNX3720": "C3C10826",
     "antenna": {
@@ -436,6 +482,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "04 KM",
+    "antennaHeightFeet": "35 FT",
     "equipmentCodes": [
       "C3C10826"
     ],
@@ -448,11 +496,12 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 14,
-    "pdfPage": 1,
+    "pdfPage": "1",
     "location": "ASP OFFICE",
     "stMobSetNX3720": "C4111611",
     "antenna": {
@@ -470,15 +519,18 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "01 KM",
+    "antennaHeightFeet": "70 FT",
     "equipmentCodes": [
       "C4111611"
     ],
-    "aniRecords": []
+    "aniRecords": [],
+    "aniOnly": false
   },
   {
     "slNo": 15,
-    "pdfPage": 1,
-    "location": "ASP MOBILE 1",
+    "pdfPage": "1",
+    "location": "ASP MOBILE 1 UP 32 EG 7113",
     "stMobSetNX3720": "C4113082",
     "antenna": {
       "0 db GP": null,
@@ -495,6 +547,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4113082",
       "C3212418"
@@ -516,12 +570,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 16,
-    "pdfPage": 1,
-    "location": "ASP MOBILE 2",
+    "pdfPage": "1",
+    "location": "ASP MOBILE 2 UP 86 G 0120",
     "stMobSetNX3720": "C3610058",
     "antenna": {
       "0 db GP": null,
@@ -538,6 +593,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3610058"
     ],
@@ -550,12 +607,13 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 17,
-    "pdfPage": 1,
-    "location": "CO CITY MOB",
+    "pdfPage": "1",
+    "location": "CO CITY MOB UP 70 AG 4296",
     "stMobSetNX3720": "C4113085",
     "antenna": {
       "0 db GP": null,
@@ -568,13 +626,14 @@
     "tMast": null,
     "giPole": null,
     "pneumaticMast": null,
-    "hhSetNX3220": "C3912520",
-    "suBattsCharger": "01",
+    "hhSetNX3220": null,
+    "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
-      "C4113085",
-      "C3912520"
+      "C4113085"
     ],
     "aniRecords": [
       {
@@ -584,21 +643,14 @@
         "whereDeployed": null,
         "pdfPage": 4,
         "source": "NX3720 ANI PDF"
-      },
-      {
-        "slNo": 47,
-        "setNumber": "C3912520",
-        "ani": "865100",
-        "whereDeployed": null,
-        "pdfPage": 2,
-        "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 18,
-    "pdfPage": 2,
-    "location": "CO SBD MOB",
+    "pdfPage": "2",
+    "location": "CO S/RAO MOB UP 32 EG 4605",
     "stMobSetNX3720": "C4111941",
     "antenna": {
       "0 db GP": null,
@@ -615,6 +667,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111941",
       "C3812671"
@@ -636,12 +690,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 19,
-    "pdfPage": 2,
-    "location": "CO S/RAO MOB",
+    "pdfPage": "2",
+    "location": "CO SBD MOB UP 70 AG 3036",
     "stMobSetNX3720": "C4111999",
     "antenna": {
       "0 db GP": null,
@@ -658,6 +713,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111999",
       "C3912390"
@@ -679,12 +736,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 20,
-    "pdfPage": 2,
-    "location": "CO",
+    "pdfPage": "2",
+    "location": "CO UP 32 EG 3037",
     "stMobSetNX3720": "C3410339",
     "antenna": {
       "0 db GP": null,
@@ -701,6 +759,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3410339",
       "C3911501"
@@ -722,12 +782,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 21,
-    "pdfPage": 2,
-    "location": "CO",
+    "pdfPage": "2",
+    "location": "CO SBD MOB UP32 EG 8155",
     "stMobSetNX3720": "C3C12984",
     "antenna": {
       "0 db GP": null,
@@ -744,6 +805,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3C12984"
     ],
@@ -756,12 +819,13 @@
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 22,
-    "pdfPage": 2,
-    "location": "CO",
+    "pdfPage": "2",
+    "location": "CO UP 86 G 0180",
     "stMobSetNX3720": "C4113369",
     "antenna": {
       "0 db GP": null,
@@ -778,6 +842,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4113369",
       "C3911548"
@@ -799,12 +865,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 23,
-    "pdfPage": 2,
-    "location": "CDO MOB",
+    "pdfPage": "2",
+    "location": "CDO MOB UP 86 G 0170",
     "stMobSetNX3720": "C4112099",
     "antenna": {
       "0 db GP": null,
@@ -821,6 +888,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4112099"
     ],
@@ -833,12 +902,13 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 24,
-    "pdfPage": 2,
-    "location": "ADM",
+    "pdfPage": "2",
+    "location": "ADM UP 86 AF 9666",
     "stMobSetNX3720": "C4111138",
     "antenna": {
       "0 db GP": null,
@@ -855,6 +925,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111138",
       "C3912590"
@@ -876,12 +948,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 25,
-    "pdfPage": 2,
-    "location": "SDM SADAR",
+    "pdfPage": "2",
+    "location": "SDM SADAR UP 86 G 0266",
     "stMobSetNX3720": "C4112456",
     "antenna": {
       "0 db GP": null,
@@ -898,6 +971,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4112456",
       "C2316133"
@@ -911,12 +986,13 @@
         "pdfPage": 4,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 26,
-    "pdfPage": 2,
-    "location": "SDM SASNI",
+    "pdfPage": "2",
+    "location": "SDM SASNI UP 86 G 0265",
     "stMobSetNX3720": "C4113777",
     "antenna": {
       "0 db GP": null,
@@ -933,6 +1009,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4113777",
       "C3911517"
@@ -954,12 +1032,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 27,
-    "pdfPage": 2,
-    "location": "SDM SBD",
+    "pdfPage": "2",
+    "location": "SDM SBD UP 86 AP 4517",
     "stMobSetNX3720": "C4112001",
     "antenna": {
       "0 db GP": null,
@@ -976,6 +1055,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4112001",
       "C3911659"
@@ -997,12 +1078,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 28,
-    "pdfPage": 2,
-    "location": "SDM S/RAO",
+    "pdfPage": "2",
+    "location": "SDM S/RAO UP 86 AH 3024",
     "stMobSetNX3720": "C3910408",
     "antenna": {
       "0 db GP": null,
@@ -1019,20 +1101,23 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3910408",
       "C3A10211"
     ],
-    "aniRecords": []
+    "aniRecords": [],
+    "aniOnly": false
   },
   {
     "slNo": 29,
-    "pdfPage": 2,
+    "pdfPage": "2",
     "location": "DCR HTS",
     "stMobSetNX3720": "C4111241",
     "antenna": {
-      "0 db GP": "03",
-      "3 db GP": "01",
+      "0 db GP": "0 4",
+      "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
     },
@@ -1045,6 +1130,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111241",
       "C3911599"
@@ -1066,11 +1153,12 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 30,
-    "pdfPage": 2,
+    "pdfPage": "2",
     "location": "DCR HTS",
     "stMobSetNX3720": "C4111809",
     "antenna": {
@@ -1088,6 +1176,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111809"
     ],
@@ -1100,15 +1190,16 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 31,
-    "pdfPage": 2,
+    "pdfPage": "2",
     "location": "PS KOTWALI",
     "stMobSetNX3720": "C4110644",
     "antenna": {
-      "0 db GP": null,
+      "0 db GP": "01",
       "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
@@ -1122,6 +1213,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "02 KM",
+    "antennaHeightFeet": "35 FT",
     "equipmentCodes": [
       "C4110644",
       "C3216131"
@@ -1143,12 +1236,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 32,
-    "pdfPage": 2,
-    "location": "PS KOT MOB",
+    "pdfPage": "2",
+    "location": "PS KOT MOB UP 86 G 0255",
     "stMobSetNX3720": "C4113091",
     "antenna": {
       "0 db GP": null,
@@ -1165,6 +1259,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4113091",
       "C3911593"
@@ -1186,11 +1282,12 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 33,
-    "pdfPage": 2,
+    "pdfPage": "3",
     "location": "OP MENDU GATE",
     "stMobSetNX3720": "C4113953",
     "antenna": {
@@ -1208,6 +1305,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "06 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
       "C4113953",
       "C3A10231"
@@ -1229,15 +1328,16 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 34,
-    "pdfPage": 2,
+    "pdfPage": "3",
     "location": "OP AGA ROAD",
     "stMobSetNX3720": "C4111659",
     "antenna": {
-      "0 db GP": null,
+      "0 db GP": "01",
       "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
@@ -1251,6 +1351,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "04 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C4111659",
       "C3C12259"
@@ -1272,11 +1374,12 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 35,
-    "pdfPage": 2,
+    "pdfPage": "3",
     "location": "OP CHAMAD GATE",
     "stMobSetNX3720": "C4111757",
     "antenna": {
@@ -1294,6 +1397,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "03 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C4111757",
       "C3214123"
@@ -1315,15 +1420,16 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 36,
-    "pdfPage": 2,
+    "pdfPage": "3",
     "location": "OP MSN GAT.",
     "stMobSetNX3720": "C4111127",
     "antenna": {
-      "0 db GP": null,
+      "0 db GP": "01",
       "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
@@ -1337,6 +1443,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "02KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C4111127",
       "C3C12648"
@@ -1358,21 +1466,22 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 37,
-    "pdfPage": 3,
+    "pdfPage": "3",
     "location": "OP DAU JI",
     "stMobSetNX3720": "C4111699",
     "antenna": {
-      "0 db GP": null,
+      "0 db GP": "01",
       "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
     },
-    "powerSupply": null,
-    "battery12V": null,
+    "powerSupply": "01",
+    "battery12V": "01",
     "tMast": null,
     "giPole": null,
     "pneumaticMast": null,
@@ -1380,6 +1489,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "1.5 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
       "C4111699",
       "C3A10807"
@@ -1401,12 +1512,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 38,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "3",
+    "location": "OP DAU JI",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1423,6 +1535,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "1.5 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
       "C3216375"
     ],
@@ -1435,12 +1549,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 39,
-    "pdfPage": 3,
-    "location": "KOT",
+    "pdfPage": "3",
+    "location": "OP DAU JI",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1457,6 +1572,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "1.5 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
       "C3C12191"
     ],
@@ -1469,12 +1586,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 40,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "3",
+    "location": "OP DAU JI",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1491,6 +1609,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "1.5 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
       "C3C12004"
     ],
@@ -1503,12 +1623,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 41,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "3",
+    "location": "OP DAU JI",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1525,6 +1646,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "1.5 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
       "C3C12255"
     ],
@@ -1537,11 +1660,12 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 42,
-    "pdfPage": 3,
+    "pdfPage": "3",
     "location": "PS MAHILA THANA",
     "stMobSetNX3720": "C3410338",
     "antenna": {
@@ -1559,6 +1683,8 @@
     "suBattsCharger": null,
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "02 KM",
+    "antennaHeightFeet": "35 FT",
     "equipmentCodes": [
       "C3410338"
     ],
@@ -1571,12 +1697,13 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 43,
-    "pdfPage": 3,
-    "location": "PS MAHILA MOB",
+    "pdfPage": "3",
+    "location": "PS MAHILA MOB UP 70 AG 3835",
     "stMobSetNX3720": "C4111199",
     "antenna": {
       "0 db GP": null,
@@ -1593,6 +1720,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111199"
     ],
@@ -1605,11 +1734,12 @@
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 44,
-    "pdfPage": 3,
+    "pdfPage": "3",
     "location": "PS HATHRAS GATE",
     "stMobSetNX3720": "C4113729",
     "antenna": {
@@ -1621,14 +1751,17 @@
     "powerSupply": null,
     "battery12V": null,
     "tMast": null,
-    "giPole": "01",
+    "giPole": null,
     "pneumaticMast": null,
-    "hhSetNX3220": null,
-    "suBattsCharger": null,
+    "hhSetNX3220": "C3911804",
+    "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "2.5 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
-      "C4113729"
+      "C4113729",
+      "C3911804"
     ],
     "aniRecords": [
       {
@@ -1639,12 +1772,13 @@
         "pdfPage": 4,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 45,
-    "pdfPage": 3,
-    "location": "PS HTS GATE MOB",
+    "pdfPage": "3",
+    "location": "PS HTS GATE MOB UP 86 G 0194",
     "stMobSetNX3720": "C4210253",
     "antenna": {
       "0 db GP": null,
@@ -1661,6 +1795,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4210253",
       "C3913094"
@@ -1682,11 +1818,12 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 46,
-    "pdfPage": 3,
+    "pdfPage": "3",
     "location": "OP FACTORY AREA",
     "stMobSetNX3720": "C3C12986",
     "antenna": {
@@ -1704,6 +1841,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "03 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C3C12986",
       "C3216378"
@@ -1725,12 +1864,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 47,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "3",
+    "location": "OP FACTORY AREA",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1747,6 +1887,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "03 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C3C11268"
     ],
@@ -1759,12 +1901,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 48,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "3",
+    "location": "OP FACTORY AREA",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1781,6 +1924,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "03 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C3910493"
     ],
@@ -1793,12 +1938,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 49,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "4",
+    "location": "OP FACTORY AREA",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1815,6 +1961,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "03 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C3912395"
     ],
@@ -1827,11 +1975,12 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 50,
-    "pdfPage": 3,
+    "pdfPage": "4",
     "location": "PS SASNI",
     "stMobSetNX3720": "C4111998",
     "antenna": {
@@ -1842,13 +1991,15 @@
     },
     "powerSupply": "01",
     "battery12V": "01",
-    "tMast": null,
-    "giPole": "01",
+    "tMast": "02",
+    "giPole": null,
     "pneumaticMast": null,
     "hhSetNX3220": "C3C12105",
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "08 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C4111998",
       "C3C12105"
@@ -1870,12 +2021,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 51,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "4",
+    "location": "PS SASNI",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1892,6 +2044,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "08 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C3C11238"
     ],
@@ -1904,12 +2058,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 52,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "4",
+    "location": "PS SASNI",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1926,6 +2081,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "08 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C3C12121"
     ],
@@ -1938,12 +2095,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 53,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "4",
+    "location": "PS SASNI",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1960,6 +2118,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "08 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C3C11671"
     ],
@@ -1972,12 +2132,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 54,
-    "pdfPage": 3,
-    "location": null,
+    "pdfPage": "4",
+    "location": "PS SASNI",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -1994,6 +2155,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "08 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C3910490"
     ],
@@ -2006,12 +2169,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 55,
-    "pdfPage": 4,
-    "location": "PS SASNI MOB",
+    "pdfPage": "4",
+    "location": "PS SASNI MOB UP 86 G 0197",
     "stMobSetNX3720": "C4111790",
     "antenna": {
       "0 db GP": null,
@@ -2028,6 +2192,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111790"
     ],
@@ -2040,13 +2206,14 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 56,
-    "pdfPage": 4,
+    "pdfPage": "4",
     "location": "OP HANUMAN JI",
-    "stMobSetNX3720": "C411334",
+    "stMobSetNX3720": "C4113334",
     "antenna": {
       "0 db GP": "01",
       "3 db GP": null,
@@ -2062,14 +2229,26 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "14 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
-      "C411334"
+      "C4113334"
     ],
-    "aniRecords": []
+    "aniRecords": [
+      {
+        "slNo": 79,
+        "setNumber": "C4113334",
+        "ani": "861039",
+        "whereDeployed": null,
+        "pdfPage": 4,
+        "source": "NX3720 ANI PDF"
+      }
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 57,
-    "pdfPage": 4,
+    "pdfPage": "4",
     "location": "PS MURSAN",
     "stMobSetNX3720": "C4210227",
     "antenna": {
@@ -2087,6 +2266,8 @@
     "suBattsCharger": null,
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "12 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C4210227"
     ],
@@ -2099,12 +2280,13 @@
         "pdfPage": 4,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 58,
-    "pdfPage": 4,
-    "location": "PS MURSAN MOB",
+    "pdfPage": "4",
+    "location": "PS MURSAN MOB UP 86 G 0199",
     "stMobSetNX3720": "C3C10756",
     "antenna": {
       "0 db GP": null,
@@ -2121,6 +2303,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3C10756"
     ],
@@ -2133,11 +2317,12 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 59,
-    "pdfPage": 4,
+    "pdfPage": "4",
     "location": "PS CHANDPA",
     "stMobSetNX3720": "C4113702",
     "antenna": {
@@ -2155,6 +2340,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "07 KM",
+    "antennaHeightFeet": "32 FT",
     "equipmentCodes": [
       "C4113702",
       "C3912214"
@@ -2176,12 +2363,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 60,
-    "pdfPage": 4,
-    "location": null,
+    "pdfPage": "4",
+    "location": "PS CHANDPA",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -2198,6 +2386,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "07 KM",
+    "antennaHeightFeet": "32 FT",
     "equipmentCodes": [
       "C3C11239"
     ],
@@ -2210,12 +2400,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 61,
-    "pdfPage": 4,
-    "location": "PS CHANDPA MOB",
+    "pdfPage": "4",
+    "location": "PS CHANDPA MOB UP 86 G 0195",
     "stMobSetNX3720": "C4210747",
     "antenna": {
       "0 db GP": null,
@@ -2232,6 +2423,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4210747"
     ],
@@ -2244,11 +2437,12 @@
         "pdfPage": 5,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 62,
-    "pdfPage": 4,
+    "pdfPage": "4",
     "location": "PS HTS JN.",
     "stMobSetNX3720": "C4111228",
     "antenna": {
@@ -2266,6 +2460,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "08 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C4111228",
       "C3912478"
@@ -2287,12 +2483,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 63,
-    "pdfPage": 4,
-    "location": "PS HTS JN. MOB",
+    "pdfPage": "4",
+    "location": "PS HTS JN. MOB UP 86 G 0249",
     "stMobSetNX3720": "C3C11427",
     "antenna": {
       "0 db GP": null,
@@ -2309,6 +2506,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3C11427",
       "C3215975"
@@ -2330,11 +2529,12 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 64,
-    "pdfPage": 4,
+    "pdfPage": "5",
     "location": "OP LADPUR",
     "stMobSetNX3720": "C4111997",
     "antenna": {
@@ -2352,6 +2552,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "08 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C4111997",
       "C3910667"
@@ -2373,11 +2575,12 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 65,
-    "pdfPage": 4,
+    "pdfPage": "5",
     "location": "OP KESHOPUR",
     "stMobSetNX3720": "C4111847",
     "antenna": {
@@ -2395,6 +2598,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "18 KM",
+    "antennaHeightFeet": "38 FT",
     "equipmentCodes": [
       "C4111847",
       "C3212903"
@@ -2416,11 +2621,12 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 66,
-    "pdfPage": 4,
+    "pdfPage": "5",
     "location": "OP PURA",
     "stMobSetNX3720": "C4111810",
     "antenna": {
@@ -2438,6 +2644,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "18 KM",
+    "antennaHeightFeet": "35 FT",
     "equipmentCodes": [
       "C4111810",
       "C3812702"
@@ -2459,11 +2667,12 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 67,
-    "pdfPage": 4,
+    "pdfPage": "5",
     "location": "OP MENDU",
     "stMobSetNX3720": "C3610108",
     "antenna": {
@@ -2481,6 +2690,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "06 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
       "C3610108"
     ],
@@ -2493,11 +2704,12 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 68,
-    "pdfPage": 4,
+    "pdfPage": "5",
     "location": "PS HSN",
     "stMobSetNX3720": "C3C12621",
     "antenna": {
@@ -2515,6 +2727,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "25 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C3C12621",
       "C3216279"
@@ -2536,12 +2750,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 69,
-    "pdfPage": 4,
-    "location": null,
+    "pdfPage": "5",
+    "location": "PS HSN",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -2558,6 +2773,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "25 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C3911744"
     ],
@@ -2570,12 +2787,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 70,
-    "pdfPage": 4,
-    "location": null,
+    "pdfPage": "5",
+    "location": "PS HSN",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -2592,6 +2810,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "25 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C3C12448"
     ],
@@ -2604,13 +2824,14 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 71,
-    "pdfPage": 4,
-    "location": "PS HSN MOB",
-    "stMobSetNX3720": "C3C12631",
+    "pdfPage": "5",
+    "location": "PS HSN MOB UP 86 G 0198",
+    "stMobSetNX3720": "C4110534",
     "antenna": {
       "0 db GP": null,
       "3 db GP": null,
@@ -2626,23 +2847,26 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
-      "C3C12631"
+      "C4110534"
     ],
     "aniRecords": [
       {
-        "slNo": 24,
-        "setNumber": "C3C12631",
-        "ani": "861070",
+        "slNo": 30,
+        "setNumber": "C4110534",
+        "ani": "861023",
         "whereDeployed": null,
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 72,
-    "pdfPage": 5,
+    "pdfPage": "5",
     "location": "OP SALEMPUR",
     "stMobSetNX3720": "C3C10551",
     "antenna": {
@@ -2660,14 +2884,17 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "20 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
       "C3C10551"
     ],
-    "aniRecords": []
+    "aniRecords": [],
+    "aniOnly": false
   },
   {
     "slNo": 73,
-    "pdfPage": 5,
+    "pdfPage": "5",
     "location": "OP JARERA",
     "stMobSetNX3720": "C4111189",
     "antenna": {
@@ -2685,6 +2912,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "38 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C4111189"
     ],
@@ -2697,11 +2926,12 @@
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 74,
-    "pdfPage": 5,
+    "pdfPage": "5",
     "location": "PS S/ RAO",
     "stMobSetNX3720": "C3B10943",
     "antenna": {
@@ -2710,8 +2940,8 @@
       "0 db Magnetic": null,
       "Whip Antenna": null
     },
-    "powerSupply": "I POWER",
-    "battery12V": "I PO WE R",
+    "powerSupply": "01",
+    "battery12V": "01",
     "tMast": "04",
     "giPole": null,
     "pneumaticMast": "01",
@@ -2719,6 +2949,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "30 KM",
+    "antennaHeightFeet": "70 FT",
     "equipmentCodes": [
       "C3B10943",
       "C3C12221"
@@ -2740,12 +2972,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 75,
-    "pdfPage": 5,
-    "location": "PS S/ROA MOB",
+    "pdfPage": "5",
+    "location": "PS S/ROA MOB UP 86 G 025",
     "stMobSetNX3720": "C4111346",
     "antenna": {
       "0 db GP": null,
@@ -2762,6 +2995,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111346",
       "C3912219"
@@ -2775,11 +3010,12 @@
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 76,
-    "pdfPage": 5,
+    "pdfPage": "5",
     "location": "OP PURDIL NAGAR",
     "stMobSetNX3720": "C4112100",
     "antenna": {
@@ -2797,6 +3033,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "32 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C4112100",
       "C3214124"
@@ -2818,11 +3056,12 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 77,
-    "pdfPage": 5,
+    "pdfPage": "5",
     "location": "OP AUGSOLI",
     "stMobSetNX3720": "C4113713",
     "antenna": {
@@ -2840,6 +3079,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "37 KM",
+    "antennaHeightFeet": "30 FT",
     "equipmentCodes": [
       "C4113713",
       "C3913118"
@@ -2861,12 +3102,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 78,
-    "pdfPage": 5,
-    "location": "OP VAJIDPUR",
+    "pdfPage": "5",
+    "location": "OP VAZIDPUR",
     "stMobSetNX3720": "C4112848",
     "antenna": {
       "0 db GP": "01",
@@ -2883,6 +3125,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "45 KM",
+    "antennaHeightFeet": "55 FT",
     "equipmentCodes": [
       "C4112848",
       "C3912418"
@@ -2904,15 +3148,16 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 79,
-    "pdfPage": 5,
+    "pdfPage": "5",
     "location": "OP KACHORA",
     "stMobSetNX3720": "C4111814",
     "antenna": {
-      "0 db GP": null,
+      "0 db GP": "01",
       "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
@@ -2926,6 +3171,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "35 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C4111814",
       "C3216067"
@@ -2947,13 +3194,14 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 80,
-    "pdfPage": 5,
+    "pdfPage": "6",
     "location": "PS SADABAD",
-    "stMobSetNX3720": "C3C12120",
+    "stMobSetNX3720": "C3610120",
     "antenna": {
       "0 db GP": "02",
       "3 db GP": null,
@@ -2969,11 +3217,21 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "20 KM",
+    "antennaHeightFeet": "65 FT",
     "equipmentCodes": [
-      "C3C12120",
+      "C3610120",
       "C3911512"
     ],
     "aniRecords": [
+      {
+        "slNo": 11,
+        "setNumber": "C3610120",
+        "ani": "861003",
+        "whereDeployed": null,
+        "pdfPage": 1,
+        "source": "NX3720 ANI PDF"
+      },
       {
         "slNo": 31,
         "setNumber": "C3911512",
@@ -2982,12 +3240,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 81,
-    "pdfPage": 5,
-    "location": "PS SBD MOB",
+    "pdfPage": "6",
+    "location": "PS SBD MOB UP 86 G 0256",
     "stMobSetNX3720": "C3610366",
     "antenna": {
       "0 db GP": null,
@@ -3004,6 +3263,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3610366",
       "C3216392"
@@ -3025,12 +3286,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 82,
-    "pdfPage": 5,
-    "location": "OP BISWARER",
+    "pdfPage": "6",
+    "location": "OP BISAWAR",
     "stMobSetNX3720": "C4111203",
     "antenna": {
       "0 db GP": "01",
@@ -3039,7 +3301,7 @@
       "Whip Antenna": null
     },
     "powerSupply": "01",
-    "battery12V": "01",
+    "battery12V": null,
     "tMast": null,
     "giPole": "02",
     "pneumaticMast": null,
@@ -3047,6 +3309,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "28 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C4111203",
       "C3216459"
@@ -3068,11 +3332,12 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 83,
-    "pdfPage": 5,
+    "pdfPage": "6",
     "location": "OP MAI",
     "stMobSetNX3720": "C3C12658",
     "antenna": {
@@ -3090,6 +3355,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "30 KM",
+    "antennaHeightFeet": "45 FT",
     "equipmentCodes": [
       "C3C12658",
       "C3C11669"
@@ -3111,11 +3378,12 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 84,
-    "pdfPage": 5,
+    "pdfPage": "6",
     "location": "OP GOVINDPUR",
     "stMobSetNX3720": "C3411448",
     "antenna": {
@@ -3133,6 +3401,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "40KM",
+    "antennaHeightFeet": "40 FT",
     "equipmentCodes": [
       "C3411448",
       "C3210857"
@@ -3154,12 +3424,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 85,
-    "pdfPage": 5,
-    "location": null,
+    "pdfPage": "6",
+    "location": "OP GOVINDPUR",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -3176,6 +3447,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "40KM",
+    "antennaHeightFeet": "40 FT",
     "equipmentCodes": [
       "C3913021"
     ],
@@ -3188,11 +3461,12 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 86,
-    "pdfPage": 5,
+    "pdfPage": "6",
     "location": "PS SAHPAU",
     "stMobSetNX3720": "C4111347",
     "antenna": {
@@ -3201,8 +3475,8 @@
       "0 db Magnetic": null,
       "Whip Antenna": null
     },
-    "powerSupply": "I POW.",
-    "battery12V": "I PO W.",
+    "powerSupply": "01",
+    "battery12V": "01",
     "tMast": "03",
     "giPole": null,
     "pneumaticMast": null,
@@ -3210,6 +3484,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "18KM",
+    "antennaHeightFeet": "55 FT",
     "equipmentCodes": [
       "C4111347",
       "C3C12045"
@@ -3231,12 +3507,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 87,
-    "pdfPage": 6,
-    "location": "PS SPU MB",
+    "pdfPage": "6",
+    "location": "PS SPU MB UP 32 EG 3173",
     "stMobSetNX3720": "C4112211",
     "antenna": {
       "0 db GP": null,
@@ -3253,6 +3530,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4112211",
       "C3212551"
@@ -3274,11 +3553,12 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 88,
-    "pdfPage": 6,
+    "pdfPage": "6",
     "location": "OP JALESAR ROAD",
     "stMobSetNX3720": "C4111348",
     "antenna": {
@@ -3287,7 +3567,7 @@
       "0 db Magnetic": null,
       "Whip Antenna": null
     },
-    "powerSupply": "001",
+    "powerSupply": "01",
     "battery12V": "01",
     "tMast": "03",
     "giPole": null,
@@ -3296,6 +3576,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "25 KM",
+    "antennaHeightFeet": "55 FT",
     "equipmentCodes": [
       "C4111348"
     ],
@@ -3308,15 +3590,16 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 89,
-    "pdfPage": 6,
+    "pdfPage": "6",
     "location": "PS GRP CITY",
     "stMobSetNX3720": "C4111147",
     "antenna": {
-      "0 db GP": null,
+      "0 db GP": "01",
       "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
@@ -3330,6 +3613,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "1.5 KM",
+    "antennaHeightFeet": "10 FT",
     "equipmentCodes": [
       "C4111147"
     ],
@@ -3342,15 +3627,16 @@
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 90,
-    "pdfPage": 6,
+    "pdfPage": "6",
     "location": "OP GRP HTS JN.",
     "stMobSetNX3720": "C4111126",
     "antenna": {
-      "0 db GP": null,
+      "0 db GP": "01",
       "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
@@ -3364,6 +3650,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "07 KM",
+    "antennaHeightFeet": "20 FT",
     "equipmentCodes": [
       "C4111126"
     ],
@@ -3376,11 +3664,12 @@
         "pdfPage": 2,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 91,
-    "pdfPage": 6,
+    "pdfPage": "6",
     "location": "F/S HTS CITY",
     "stMobSetNX3720": "C3C12622",
     "antenna": {
@@ -3398,6 +3687,8 @@
     "suBattsCharger": "01",
     "paSystem": "01",
     "remarks": null,
+    "distanceFromDcr": "4 KM",
+    "antennaHeightFeet": "72 FT",
     "equipmentCodes": [
       "C3C12622",
       "C3C12185"
@@ -3419,12 +3710,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 92,
-    "pdfPage": 6,
-    "location": "F/T HTS 4149",
+    "pdfPage": "6",
+    "location": "F/T SAI 4149",
     "stMobSetNX3720": "C4113851",
     "antenna": {
       "0 db GP": null,
@@ -3441,6 +3733,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4113851",
       "C3911515"
@@ -3462,12 +3756,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 93,
-    "pdfPage": 6,
-    "location": "F/T HTS 0081",
+    "pdfPage": "6",
+    "location": "F/T S/RAO 0081",
     "stMobSetNX3720": "C4113667",
     "antenna": {
       "0 db GP": null,
@@ -3484,6 +3779,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4113667",
       "C3C12069"
@@ -3505,12 +3802,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 94,
-    "pdfPage": 6,
-    "location": "F/T HTS 0011",
+    "pdfPage": "6",
+    "location": "F/T HTS CITY 5358",
     "stMobSetNX3720": "C3610123",
     "antenna": {
       "0 db GP": null,
@@ -3524,9 +3822,11 @@
     "giPole": null,
     "pneumaticMast": null,
     "hhSetNX3220": "C3C12261",
-    "suBattsCharger": "01",
+    "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3610123",
       "C3C12261"
@@ -3548,12 +3848,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 95,
-    "pdfPage": 6,
-    "location": "F/T HTS 0116",
+    "pdfPage": "6",
+    "location": "F/T HTS CITY 0116",
     "stMobSetNX3720": "C4210571",
     "antenna": {
       "0 db GP": null,
@@ -3570,6 +3871,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4210571",
       "C3812700"
@@ -3591,12 +3894,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 96,
-    "pdfPage": 6,
-    "location": "F/T BULERO 0076",
+    "pdfPage": "7",
+    "location": "F/MOB S/RAO BULERO 0076",
     "stMobSetNX3720": "C4111655",
     "antenna": {
       "0 db GP": null,
@@ -3613,6 +3917,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111655"
     ],
@@ -3625,11 +3931,12 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 97,
-    "pdfPage": 6,
+    "pdfPage": "7",
     "location": "CFO MOB. 6244",
     "stMobSetNX3720": "C4211230",
     "antenna": {
@@ -3647,6 +3954,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4211230",
       "C3216272"
@@ -3668,12 +3977,13 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 98,
-    "pdfPage": 6,
-    "location": "FSSO MOB.0623",
+    "pdfPage": "7",
+    "location": "FSSO CITY MOB.0623",
     "stMobSetNX3720": "C4112197",
     "antenna": {
       "0 db GP": null,
@@ -3690,6 +4000,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4112197"
     ],
@@ -3702,12 +4014,13 @@
         "pdfPage": 4,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 99,
-    "pdfPage": 6,
-    "location": "F/T HTS 0664",
+    "pdfPage": "7",
+    "location": "F/T S/RAO 0164",
     "stMobSetNX3720": "C4114281",
     "antenna": {
       "0 db GP": null,
@@ -3724,6 +4037,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4114281"
     ],
@@ -3736,12 +4051,13 @@
         "pdfPage": 4,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 100,
-    "pdfPage": 6,
-    "location": "F/S HTS",
+    "pdfPage": "7",
+    "location": "F/T HTS CITY 3199",
     "stMobSetNX3720": "C4111662",
     "antenna": {
       "0 db GP": null,
@@ -3758,6 +4074,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111662"
     ],
@@ -3770,12 +4088,13 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 101,
-    "pdfPage": 6,
-    "location": "F/T HTS 9420",
+    "pdfPage": "7",
+    "location": "F/T HTS CITY 9420",
     "stMobSetNX3720": "C4111689",
     "antenna": {
       "0 db GP": null,
@@ -3792,6 +4111,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111689"
     ],
@@ -3804,11 +4125,12 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 102,
-    "pdfPage": 6,
+    "pdfPage": "7",
     "location": "F/S S/RAO",
     "stMobSetNX3720": "C4113742",
     "antenna": {
@@ -3826,6 +4148,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "35 KM",
+    "antennaHeightFeet": "40 FT",
     "equipmentCodes": [
       "C4113742",
       "C3A10890"
@@ -3847,12 +4171,13 @@
         "pdfPage": 2,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 103,
-    "pdfPage": 6,
-    "location": "F/S S/RAO 0139",
+    "pdfPage": "7",
+    "location": "F/T HTS CITY 0139",
     "stMobSetNX3720": "C3410298",
     "antenna": {
       "0 db GP": null,
@@ -3869,6 +4194,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3410298"
     ],
@@ -3881,11 +4208,12 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 104,
-    "pdfPage": 7,
+    "pdfPage": "7",
     "location": "F/S SBD",
     "stMobSetNX3720": "C3510926",
     "antenna": {
@@ -3895,7 +4223,7 @@
       "Whip Antenna": null
     },
     "powerSupply": "01",
-    "battery12V": null,
+    "battery12V": "01",
     "tMast": null,
     "giPole": null,
     "pneumaticMast": null,
@@ -3903,6 +4231,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "22 KM",
+    "antennaHeightFeet": "60 FT",
     "equipmentCodes": [
       "C3510926",
       "C3C12135"
@@ -3924,12 +4254,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 105,
-    "pdfPage": 7,
-    "location": "F/T SBD 0054",
+    "pdfPage": "7",
+    "location": "F/T SBD 0059",
     "stMobSetNX3720": "C3610334",
     "antenna": {
       "0 db GP": null,
@@ -3946,6 +4277,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3610334"
     ],
@@ -3958,15 +4291,16 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 106,
-    "pdfPage": 7,
+    "pdfPage": "7",
     "location": "F/S SASNI",
     "stMobSetNX3720": "C4113774",
     "antenna": {
-      "0 db GP": null,
+      "0 db GP": "01",
       "3 db GP": null,
       "0 db Magnetic": null,
       "Whip Antenna": null
@@ -3976,12 +4310,15 @@
     "tMast": null,
     "giPole": null,
     "pneumaticMast": null,
-    "hhSetNX3220": null,
-    "suBattsCharger": null,
+    "hhSetNX3220": "C3C12143",
+    "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "07 KM",
+    "antennaHeightFeet": "32 FT",
     "equipmentCodes": [
-      "C4113774"
+      "C4113774",
+      "C3C12143"
     ],
     "aniRecords": [
       {
@@ -3991,12 +4328,21 @@
         "whereDeployed": null,
         "pdfPage": 4,
         "source": "NX3720 ANI PDF"
+      },
+      {
+        "slNo": 70,
+        "setNumber": "C3C12143",
+        "ani": "865118",
+        "whereDeployed": null,
+        "pdfPage": 3,
+        "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 107,
-    "pdfPage": 7,
+    "pdfPage": "7",
     "location": "T I MOB 0179",
     "stMobSetNX3720": "C4113898",
     "antenna": {
@@ -4014,6 +4360,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4113898",
       "C3C112487"
@@ -4027,12 +4375,13 @@
         "pdfPage": 4,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 108,
-    "pdfPage": 7,
-    "location": null,
+    "pdfPage": "7",
+    "location": "T I MOB 0179",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -4049,6 +4398,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3911521"
     ],
@@ -4061,12 +4412,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 109,
-    "pdfPage": 7,
-    "location": null,
+    "pdfPage": "7",
+    "location": "T I MOB 0179",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -4083,6 +4435,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3912354"
     ],
@@ -4095,12 +4449,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 110,
-    "pdfPage": 7,
-    "location": null,
+    "pdfPage": "7",
+    "location": "T I MOB 0179",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -4117,6 +4472,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3910573"
     ],
@@ -4129,12 +4486,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 111,
-    "pdfPage": 7,
-    "location": null,
+    "pdfPage": "7",
+    "location": "T I MOB 0179",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -4151,6 +4509,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3910508"
     ],
@@ -4163,12 +4523,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 112,
-    "pdfPage": 7,
-    "location": null,
+    "pdfPage": "7",
+    "location": "T I MOB 0179",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -4185,6 +4546,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3912375"
     ],
@@ -4197,12 +4560,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 113,
-    "pdfPage": 7,
-    "location": null,
+    "pdfPage": "7",
+    "location": "T I MOB 0179",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -4219,6 +4583,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3C12620"
     ],
@@ -4231,12 +4597,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 114,
-    "pdfPage": 7,
-    "location": null,
+    "pdfPage": "7",
+    "location": "T I MOB 0179",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -4253,6 +4620,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3912451"
     ],
@@ -4265,12 +4634,13 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 115,
-    "pdfPage": 7,
-    "location": null,
+    "pdfPage": "8",
+    "location": "T I MOB 0179",
     "stMobSetNX3720": null,
     "antenna": {
       "0 db GP": null,
@@ -4287,6 +4657,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3216244"
     ],
@@ -4299,11 +4671,12 @@
         "pdfPage": 3,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 116,
-    "pdfPage": 7,
+    "pdfPage": "8",
     "location": "P/L ESCORT 0117",
     "stMobSetNX3720": "C4112005",
     "antenna": {
@@ -4321,6 +4694,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4112005"
     ],
@@ -4333,11 +4708,12 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 117,
-    "pdfPage": 7,
+    "pdfPage": "8",
     "location": "P/L ESCORT 0083",
     "stMobSetNX3720": "C4111700",
     "antenna": {
@@ -4355,6 +4731,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4111700"
     ],
@@ -4367,11 +4745,12 @@
         "pdfPage": 3,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 118,
-    "pdfPage": 7,
+    "pdfPage": "8",
     "location": "P/L ESCORT 0118",
     "stMobSetNX3720": "C3910113",
     "antenna": {
@@ -4389,6 +4768,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C3910113"
     ],
@@ -4401,11 +4782,12 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 119,
-    "pdfPage": 7,
+    "pdfPage": "8",
     "location": "CHUNAV KARYALAY",
     "stMobSetNX3720": "C4115204",
     "antenna": {
@@ -4423,6 +4805,8 @@
     "suBattsCharger": null,
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "200 METER",
+    "antennaHeightFeet": "36 FT",
     "equipmentCodes": [
       "C4115204"
     ],
@@ -4435,11 +4819,12 @@
         "pdfPage": 4,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 120,
-    "pdfPage": 7,
+    "pdfPage": "8",
     "location": "P/L HTS",
     "stMobSetNX3720": "C3610079",
     "antenna": {
@@ -4457,6 +4842,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": "100 METER",
+    "antennaHeightFeet": "10 FT",
     "equipmentCodes": [
       "C3610079",
       "C3C12093"
@@ -4470,12 +4857,13 @@
         "pdfPage": 1,
         "source": "NX3720 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
   },
   {
     "slNo": 121,
-    "pdfPage": 7,
-    "location": "ADM – J HTS",
+    "pdfPage": "8",
+    "location": "ADM – J HTS UP 86 AU 6782",
     "stMobSetNX3720": "C4112611",
     "antenna": {
       "0 db GP": null,
@@ -4492,6 +4880,8 @@
     "suBattsCharger": "01",
     "paSystem": null,
     "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
     "equipmentCodes": [
       "C4112611",
       "C3812675"
@@ -4513,6 +4903,658 @@
         "pdfPage": 1,
         "source": "NX3220 ANI PDF"
       }
-    ]
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 122,
+    "pdfPage": "8",
+    "location": "COURT SURKSHA",
+    "stMobSetNX3720": null,
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3212897",
+    "suBattsCharger": "02",
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C3212897"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 4,
+        "setNumber": "C3212897",
+        "ani": "865084",
+        "whereDeployed": null,
+        "pdfPage": 1,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 123,
+    "pdfPage": "8",
+    "location": "COURT SURKSHA",
+    "stMobSetNX3720": null,
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3910491",
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C3910491"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 26,
+        "setNumber": "C3910491",
+        "ani": "865119",
+        "whereDeployed": null,
+        "pdfPage": 1,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 124,
+    "pdfPage": "8",
+    "location": "COURT SURKSHA",
+    "stMobSetNX3720": null,
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3B10936",
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C3B10936"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 56,
+        "setNumber": "C3B10936",
+        "ani": "865107",
+        "whereDeployed": null,
+        "pdfPage": 2,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 125,
+    "pdfPage": "8",
+    "location": "COURT SURKSHA",
+    "stMobSetNX3720": null,
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3C12071",
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C3C12071"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 65,
+        "setNumber": "C3C12071",
+        "ani": "865052",
+        "whereDeployed": null,
+        "pdfPage": 2,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 126,
+    "pdfPage": "8",
+    "location": "HF STN",
+    "stMobSetNX3720": "ICOM&KENWOOD",
+    "antenna": {
+      "0 db GP": "DIPOLE & BRODBAND ANT",
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": "02",
+    "battery12V": "03",
+    "tMast": "07",
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": null,
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "ICOM&KENWOOD"
+    ],
+    "aniRecords": [],
+    "aniOnly": false
+  },
+  {
+    "slNo": 127,
+    "pdfPage": "8",
+    "location": "W/S HTS",
+    "stMobSetNX3720": "C4210234",
+    "antenna": {
+      "0 db GP": "02 OLD",
+      "3 db GP": null,
+      "0 db Magnetic": "39",
+      "Whip Antenna": "10"
+    },
+    "powerSupply": "14",
+    "battery12V": "13",
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3910660",
+    "suBattsCharger": "04",
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C4210234",
+      "C3910660"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 95,
+        "setNumber": "C4210234",
+        "ani": "861073",
+        "whereDeployed": null,
+        "pdfPage": 5,
+        "source": "NX3720 ANI PDF"
+      },
+      {
+        "slNo": 28,
+        "setNumber": "C3910660",
+        "ani": "865080",
+        "whereDeployed": null,
+        "pdfPage": 1,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 128,
+    "pdfPage": "8",
+    "location": "W/S HTS",
+    "stMobSetNX3720": "C4112343",
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3912363",
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C4112343",
+      "C3912363"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 105,
+        "setNumber": "C4112343",
+        "ani": "861016",
+        "whereDeployed": null,
+        "pdfPage": 5,
+        "source": "NX3720 ANI PDF"
+      },
+      {
+        "slNo": 90,
+        "setNumber": "C3912363",
+        "ani": "865114",
+        "whereDeployed": null,
+        "pdfPage": 3,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 129,
+    "pdfPage": "8",
+    "location": "W/S HTS",
+    "stMobSetNX3720": "C4111660",
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3911548",
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C4111660",
+      "C3911548"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 103,
+        "setNumber": "C4111660",
+        "ani": "861051",
+        "whereDeployed": null,
+        "pdfPage": 5,
+        "source": "NX3720 ANI PDF"
+      },
+      {
+        "slNo": 34,
+        "setNumber": "C3911548",
+        "ani": "865028",
+        "whereDeployed": null,
+        "pdfPage": 1,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 130,
+    "pdfPage": "8",
+    "location": "W/S HTS",
+    "stMobSetNX3720": "C4113779",
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3216000",
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C4113779",
+      "C3216000"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 101,
+        "setNumber": "C4113779",
+        "ani": "861002",
+        "whereDeployed": null,
+        "pdfPage": 5,
+        "source": "NX3720 ANI PDF"
+      },
+      {
+        "slNo": 10,
+        "setNumber": "C3216000",
+        "ani": "865095",
+        "whereDeployed": null,
+        "pdfPage": 1,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 131,
+    "pdfPage": "9",
+    "location": "W/S HTS",
+    "stMobSetNX3720": "C3C12682",
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3214277",
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C3C12682",
+      "C3214277"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 26,
+        "setNumber": "C3C12682",
+        "ani": "861048",
+        "whereDeployed": null,
+        "pdfPage": 2,
+        "source": "NX3720 ANI PDF"
+      },
+      {
+        "slNo": 8,
+        "setNumber": "C3214277",
+        "ani": "865034",
+        "whereDeployed": null,
+        "pdfPage": 1,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 132,
+    "pdfPage": "9",
+    "location": "SCR",
+    "stMobSetNX3720": "C4210228",
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3912217",
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C4210228",
+      "C3912217"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 94,
+        "setNumber": "C4210228",
+        "ani": "SCR",
+        "whereDeployed": null,
+        "pdfPage": 4,
+        "source": "NX3720 ANI PDF"
+      },
+      {
+        "slNo": 89,
+        "setNumber": "C3912217",
+        "ani": "865121",
+        "whereDeployed": null,
+        "pdfPage": 3,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
+  },
+  {
+    "slNo": 133,
+    "pdfPage": "9",
+    "location": "RHQ",
+    "stMobSetNX3720": "C3C10631",
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": null,
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C3C10631"
+    ],
+    "aniRecords": [],
+    "aniOnly": false
+  },
+  {
+    "slNo": 134,
+    "pdfPage": "9",
+    "location": "V.C. ROOM",
+    "stMobSetNX3720": null,
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": "02",
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": null,
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [],
+    "aniRecords": [],
+    "aniOnly": false
+  },
+  {
+    "slNo": 135,
+    "pdfPage": "9",
+    "location": "W/S OFFICE",
+    "stMobSetNX3720": null,
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": "02",
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": null,
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [],
+    "aniRecords": [],
+    "aniOnly": false
+  },
+  {
+    "slNo": 136,
+    "pdfPage": "9",
+    "location": "HO JITESH",
+    "stMobSetNX3720": null,
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": "01",
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": null,
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [],
+    "aniRecords": [],
+    "aniOnly": false
+  },
+  {
+    "slNo": 137,
+    "pdfPage": "9",
+    "location": "REPEATER",
+    "stMobSetNX3720": "02SETKENWOOD",
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": null,
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "02SETKENWOOD"
+    ],
+    "aniRecords": [],
+    "aniOnly": false
+  },
+  {
+    "slNo": 138,
+    "pdfPage": "9",
+    "location": "SCR MOTOROLA",
+    "stMobSetNX3720": "02SET",
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": null,
+    "suBattsCharger": null,
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "02SET"
+    ],
+    "aniRecords": [],
+    "aniOnly": false
+  },
+  {
+    "slNo": 139,
+    "pdfPage": "9",
+    "location": "W/S HTS",
+    "stMobSetNX3720": null,
+    "antenna": {
+      "0 db GP": null,
+      "3 db GP": null,
+      "0 db Magnetic": null,
+      "Whip Antenna": null
+    },
+    "powerSupply": null,
+    "battery12V": null,
+    "tMast": null,
+    "giPole": null,
+    "pneumaticMast": null,
+    "hhSetNX3220": "C3912520",
+    "suBattsCharger": "01",
+    "paSystem": null,
+    "remarks": null,
+    "distanceFromDcr": null,
+    "antennaHeightFeet": null,
+    "equipmentCodes": [
+      "C3912520"
+    ],
+    "aniRecords": [
+      {
+        "slNo": 47,
+        "setNumber": "C3912520",
+        "ani": "865100",
+        "whereDeployed": null,
+        "pdfPage": 2,
+        "source": "NX3220 ANI PDF"
+      }
+    ],
+    "aniOnly": false
   }
 ]

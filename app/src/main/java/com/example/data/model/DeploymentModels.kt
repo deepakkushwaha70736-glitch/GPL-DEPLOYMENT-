@@ -37,7 +37,9 @@ data class GplDeployment(
     val remarks: String?,
     val equipmentCodes: List<String>,
     val aniRecords: List<AniRecord>,
-    val aniOnly: Boolean = false
+    val aniOnly: Boolean = false,
+    val distanceFromDcr: String? = null,
+    val antennaHeightFeet: String? = null
 ) {
     val displayTitle: String
         get() = location?.ifBlank { null } ?: "Unknown Location / ANI Only"
@@ -45,6 +47,13 @@ data class GplDeployment(
     val uniqueKey: String
         get() = "$slNo|$pdfPage|${location ?: ""}|${equipmentCodes.joinToString()}"
 }
+
+data class StationDistanceHeightItem(
+    val slNo: Int,
+    val name: String,
+    val dist: String,
+    val height: String
+)
 
 enum class SearchMode(val displayName: String, val icon: String, val hintText: String, val placeholder: String) {
     SET("Set Number", "🔢", "Exact और partial Set Number / Equipment Code search", "उदाहरण: C4110644"),
@@ -56,6 +65,7 @@ enum class SearchMode(val displayName: String, val icon: String, val hintText: S
 enum class FilterCategory(val label: String, val icon: String) {
     ALL("All", "⚡"),
     THANA("Thana / Kotwali", "🏢"),
+    ANTENNA("Antenna (0dB/3dB)", "📡"),
     OFFICERS("Officers & Escorts", "⭐"),
     MOBILES("Vehicles / Mobiles", "🚓"),
     BASE_MAST("Base Mast / Poles", "🗼"),

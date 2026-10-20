@@ -1,0 +1,284 @@
+[
+  {
+    "slNo": 1,
+    "name": "DM CAMP OFFICE",
+    "dist": "06 KM",
+    "height": "15 FT"
+  },
+  {
+    "slNo": 2,
+    "name": "DM RESIDENCE",
+    "dist": "06 KM",
+    "height": "20 FT"
+  },
+  {
+    "slNo": 3,
+    "name": "SP CAMP OFFICE",
+    "dist": "06 KM",
+    "height": "84 FT"
+  },
+  {
+    "slNo": 4,
+    "name": "SP RESIDENCE",
+    "dist": "06 KM",
+    "height": "84 FT"
+  },
+  {
+    "slNo": 5,
+    "name": "ASP RESIDENCE",
+    "dist": "04 KM",
+    "height": "35 FT"
+  },
+  {
+    "slNo": 6,
+    "name": "SP OFFICE",
+    "dist": "01 KM",
+    "height": "70 FT"
+  },
+  {
+    "slNo": 7,
+    "name": "ASP OFFICE",
+    "dist": "01 KM",
+    "height": "70 FT"
+  },
+  {
+    "slNo": 8,
+    "name": "POLICE LINE",
+    "dist": "100 METER",
+    "height": "10 FT"
+  },
+  {
+    "slNo": 9,
+    "name": "VIP/ ELECTION CELL",
+    "dist": "200 METER",
+    "height": "36 FT"
+  },
+  {
+    "slNo": 10,
+    "name": "FIRE STATION HTS",
+    "dist": "04 KM",
+    "height": "72 FT"
+  },
+  {
+    "slNo": 11,
+    "name": "PS KOTWALI",
+    "dist": "02 KM",
+    "height": "35 FT"
+  },
+  {
+    "slNo": 12,
+    "name": "OP MURSAN GATE",
+    "dist": "02 KM",
+    "height": "20 FT"
+  },
+  {
+    "slNo": 13,
+    "name": "OP CHAMAD GATE",
+    "dist": "03 KM",
+    "height": "20 FT"
+  },
+  {
+    "slNo": 14,
+    "name": "OP AGRA ROAD",
+    "dist": "04 KM",
+    "height": "20 FT"
+  },
+  {
+    "slNo": 15,
+    "name": "OP DAU JI",
+    "dist": "1.5 KM",
+    "height": "30 FT"
+  },
+  {
+    "slNo": 16,
+    "name": "PS HATHRAS GATE",
+    "dist": "2.5 KM",
+    "height": "45 FT"
+  },
+  {
+    "slNo": 17,
+    "name": "OP FACTORY AREA",
+    "dist": "03 KM",
+    "height": "20 FT"
+  },
+  {
+    "slNo": 18,
+    "name": "PS SASNI",
+    "dist": "08 KM",
+    "height": "45 FT"
+  },
+  {
+    "slNo": 19,
+    "name": "OP HANUMAN JI",
+    "dist": "14 KM",
+    "height": "30 FT"
+  },
+  {
+    "slNo": 20,
+    "name": "PS MAHILA THANA",
+    "dist": "02 KM",
+    "height": "35 FT"
+  },
+  {
+    "slNo": 21,
+    "name": "GRP CITY",
+    "dist": "1.5 KM",
+    "height": "10 FT"
+  },
+  {
+    "slNo": 22,
+    "name": "FIRE STATION SASNI",
+    "dist": "07 KM",
+    "height": "32 FT"
+  },
+  {
+    "slNo": 23,
+    "name": "PS SADABAD",
+    "dist": "20 KM",
+    "height": "65 FT"
+  },
+  {
+    "slNo": 24,
+    "name": "OP BISAVAR",
+    "dist": "28 KM",
+    "height": "45 FT"
+  },
+  {
+    "slNo": 25,
+    "name": "OP MAI",
+    "dist": "30 KM",
+    "height": "45 FT"
+  },
+  {
+    "slNo": 26,
+    "name": "OP GOVINDPUR",
+    "dist": "40 KM",
+    "height": "40 FT"
+  },
+  {
+    "slNo": 27,
+    "name": "FIRE STATION SADABAD",
+    "dist": "22 KM",
+    "height": "60 FT"
+  },
+  {
+    "slNo": 28,
+    "name": "PS MURSAN",
+    "dist": "12 KM",
+    "height": "45 FT"
+  },
+  {
+    "slNo": 29,
+    "name": "PS SAHPAU",
+    "dist": "18 KM",
+    "height": "55 FT"
+  },
+  {
+    "slNo": 30,
+    "name": "OP JALESAR ROAD",
+    "dist": "25 KM",
+    "height": "55 FT"
+  },
+  {
+    "slNo": 31,
+    "name": "PS CHANDPA",
+    "dist": "07 KM",
+    "height": "32 FT"
+  },
+  {
+    "slNo": 32,
+    "name": "PS SIKNDRARAU",
+    "dist": "30 KM",
+    "height": "7 FT"
+  },
+  {
+    "slNo": 33,
+    "name": "OP VAJIDPUR",
+    "dist": "45 KM",
+    "height": "55 FT"
+  },
+  {
+    "slNo": 34,
+    "name": "OP AGASAULI",
+    "dist": "37 KM",
+    "height": "30 FT"
+  },
+  {
+    "slNo": 35,
+    "name": "OP KACHAURA",
+    "dist": "35 KM",
+    "height": "20 FT"
+  },
+  {
+    "slNo": 36,
+    "name": "OP PURDIL NAGAR",
+    "dist": "32 KM",
+    "height": "20 FT"
+  },
+  {
+    "slNo": 37,
+    "name": "FIRE STATION SIKNDRARAU",
+    "dist": "35 KM",
+    "height": "40 FT"
+  },
+  {
+    "slNo": 38,
+    "name": "PS HASAYAN",
+    "dist": "25 KM",
+    "height": "45 FT"
+  },
+  {
+    "slNo": 39,
+    "name": "OP JARERA",
+    "dist": "38 KM",
+    "height": "45 FT"
+  },
+  {
+    "slNo": 40,
+    "name": "OP SALEMPUR",
+    "dist": "20 KM",
+    "height": "30 FT"
+  },
+  {
+    "slNo": 41,
+    "name": "PS HATHRAS JUCTION",
+    "dist": "08 KM",
+    "height": "45 FT"
+  },
+  {
+    "slNo": 42,
+    "name": "OP KESHOPUR",
+    "dist": "18 KM",
+    "height": "38 FT"
+  },
+  {
+    "slNo": 43,
+    "name": "OP PORA",
+    "dist": "18 KM",
+    "height": "35 FT"
+  },
+  {
+    "slNo": 44,
+    "name": "OP LADPUR",
+    "dist": "08 KM",
+    "height": "20 FT"
+  },
+  {
+    "slNo": 45,
+    "name": "OP MENDU",
+    "dist": "06 KM",
+    "height": "30 FT"
+  },
+  {
+    "slNo": 46,
+    "name": "OP GRP JUCTION",
+    "dist": "07 KM",
+    "height": "20 FT"
+  },
+  {
+    "slNo": 47,
+    "name": "KAWAD MELA CONTROL ROOM",
+    "dist": "07 KM",
+    "height": "40 FT"
+  }
+]

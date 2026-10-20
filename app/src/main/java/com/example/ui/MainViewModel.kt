@@ -52,6 +52,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         repository.getDirectoryContacts()
     }
 
+    val stationDistancesHeights: List<com.example.data.model.StationDistanceHeightItem> by lazy {
+        repository.getStationDistancesHeights()
+    }
+
     val radioGuideItems: List<RadioCodeItem> by lazy {
         repository.getRadioGuideItems()
     }

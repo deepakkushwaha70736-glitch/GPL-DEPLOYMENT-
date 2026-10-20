@@ -27,6 +27,7 @@ class PoliceRepository(
     private val allAni = mutableListOf<AniRecord>()
     private val gplByCode = mutableMapOf<String, MutableList<GplDeployment>>()
     private val allUniqueCodes = mutableSetOf<String>()
+    private val stationDistancesHeights = mutableListOf<com.example.data.model.StationDistanceHeightItem>()
 
     val bookmarks: Flow<List<BookmarkEntity>> = dao.getAllBookmarks()
     val recentSearches: Flow<List<RecentSearchEntity>> = dao.getRecentSearches()
@@ -94,6 +95,9 @@ class PoliceRepository(
                     }
                 }
 
+                val distFromDcr = obj.optString("distanceFromDcr", "").takeIf { it != "null" && it.isNotBlank() }
+                val antHeight = obj.optString("antennaHeightFeet", "").takeIf { it != "null" && it.isNotBlank() }
+
                 val deployment = GplDeployment(
                     slNo = slNo,
                     pdfPage = pdfPage,
@@ -111,7 +115,9 @@ class PoliceRepository(
                     remarks = remarks,
                     equipmentCodes = eqCodesList,
                     aniRecords = aniList,
-                    aniOnly = false
+                    aniOnly = false,
+                    distanceFromDcr = distFromDcr,
+                    antennaHeightFeet = antHeight
                 )
                 gplDeployments.add(deployment)
 
@@ -119,6 +125,25 @@ class PoliceRepository(
                     val nCode = norm(code)
                     gplByCode.getOrPut(nCode) { mutableListOf() }.add(deployment)
                 }
+            }
+
+            // Load 47 Station Distances and Heights
+            try {
+                val stnJsonStr = context.assets.open("station_distances_heights.json").bufferedReader().use { it.readText() }
+                val stnArray = JSONArray(stnJsonStr)
+                for (i in 0 until stnArray.length()) {
+                    val sObj = stnArray.getJSONObject(i)
+                    stationDistancesHeights.add(
+                        com.example.data.model.StationDistanceHeightItem(
+                            slNo = sObj.optInt("slNo"),
+                            name = sObj.optString("name", ""),
+                            dist = sObj.optString("dist", ""),
+                            height = sObj.optString("height", "")
+                        )
+                    )
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
             }
 
             // Load All ANI records
@@ -150,6 +175,7 @@ class PoliceRepository(
 
     fun getTotalEntriesCount(): Int = gplDeployments.size
     fun getTotalUniqueCodesCount(): Int = allUniqueCodes.size
+    fun getStationDistancesHeights(): List<com.example.data.model.StationDistanceHeightItem> = stationDistancesHeights
 
     fun searchDeployments(query: String, mode: SearchMode, category: FilterCategory): List<GplDeployment> {
         val q = norm(query)
@@ -166,13 +192,39 @@ class PoliceRepository(
                 when (mode) {
                     SearchMode.SET -> row.equipmentCodes.any { norm(it).contains(q) }
                     SearchMode.ANI -> row.aniRecords.any { norm(it.ani ?: "").contains(q) }
-                    SearchMode.PLACE -> norm(row.location ?: "").contains(q)
+                    SearchMode.PLACE -> norm(row.location ?: "").contains(q) ||
+                            norm(row.distanceFromDcr ?: "").contains(q) ||
+                            norm(row.antennaHeightFeet ?: "").contains(q) ||
+                            ((q.contains("0 db") || q.contains("0db")) && !row.antenna.zeroDbGp.isNullOrBlank()) ||
+                            ((q.contains("3 db") || q.contains("3db")) && !row.antenna.threeDbGp.isNullOrBlank()) ||
+                            (q.contains("antenna") && (row.antenna.hasAny || !row.antennaHeightFeet.isNullOrBlank()))
                     SearchMode.ALL -> {
-                        row.equipmentCodes.any { norm(it).contains(q) } ||
+                        val isAntennaSearch = q.contains("0 db") || q.contains("0db") ||
+                                q.contains("3 db") || q.contains("3db") ||
+                                q.contains("whip") || q.contains("magnetic") ||
+                                q.contains("antenna") || q.contains("एंटीना")
+
+                        val matchesAntenna = when {
+                            q.contains("0 db") || q.contains("0db") -> !row.antenna.zeroDbGp.isNullOrBlank()
+                            q.contains("3 db") || q.contains("3db") -> !row.antenna.threeDbGp.isNullOrBlank()
+                            q.contains("magnetic") -> !row.antenna.zeroDbMagnetic.isNullOrBlank()
+                            q.contains("whip") -> !row.antenna.whipAntenna.isNullOrBlank()
+                            isAntennaSearch -> row.antenna.hasAny || !row.antennaHeightFeet.isNullOrBlank()
+                            else -> false
+                        }
+
+                        matchesAntenna ||
+                                row.equipmentCodes.any { norm(it).contains(q) } ||
                                 row.aniRecords.any { norm(it.ani ?: "").contains(q) } ||
                                 norm(row.location ?: "").contains(q) ||
                                 norm(row.stMobSetNX3720 ?: "").contains(q) ||
                                 norm(row.hhSetNX3220 ?: "").contains(q) ||
+                                norm(row.distanceFromDcr ?: "").contains(q) ||
+                                norm(row.antennaHeightFeet ?: "").contains(q) ||
+                                norm(row.antenna.zeroDbGp ?: "").contains(q) ||
+                                norm(row.antenna.threeDbGp ?: "").contains(q) ||
+                                norm(row.antenna.zeroDbMagnetic ?: "").contains(q) ||
+                                norm(row.antenna.whipAntenna ?: "").contains(q) ||
                                 norm(row.remarks ?: "").contains(q)
                     }
                 }
@@ -229,6 +281,9 @@ class PoliceRepository(
                             loc.contains("CHOWKI") || loc.contains("SASNI") || loc.contains("SADABAD") ||
                             loc.contains("SIKANDRA") || loc.contains("CHANDPA") || loc.contains("HASAYAN") ||
                             loc.contains("SAHPAU") || loc.contains("MURSAN") || loc.contains("HATHRAS GATE")
+                }
+                FilterCategory.ANTENNA -> {
+                    item.antenna.hasAny || !item.antennaHeightFeet.isNullOrBlank()
                 }
                 FilterCategory.OFFICERS -> {
                     val loc = (item.location ?: "").uppercase()

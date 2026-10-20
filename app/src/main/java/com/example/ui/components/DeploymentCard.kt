@@ -107,6 +107,45 @@ fun DeploymentCard(
                         fontWeight = FontWeight.SemiBold,
                         color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f)
                     )
+
+                    if (!deployment.distanceFromDcr.isNullOrBlank() || !deployment.antennaHeightFeet.isNullOrBlank()) {
+                        Spacer(modifier = Modifier.height(6.dp))
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(6.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            deployment.distanceFromDcr?.let { dist ->
+                                Box(
+                                    modifier = Modifier
+                                        .clip(RoundedCornerShape(6.dp))
+                                        .background(PoliceNavy900)
+                                        .padding(horizontal = 8.dp, vertical = 3.dp)
+                                ) {
+                                    Text(
+                                        text = "📍 DCR से $dist",
+                                        fontSize = 11.sp,
+                                        fontWeight = FontWeight.Bold,
+                                        color = PoliceGold
+                                    )
+                                }
+                            }
+                            deployment.antennaHeightFeet?.let { height ->
+                                Box(
+                                    modifier = Modifier
+                                        .clip(RoundedCornerShape(6.dp))
+                                        .background(PoliceBlue100)
+                                        .padding(horizontal = 8.dp, vertical = 3.dp)
+                                ) {
+                                    Text(
+                                        text = "🗼 एंटीना: $height",
+                                        fontSize = 11.sp,
+                                        fontWeight = FontWeight.Bold,
+                                        color = PoliceNavy900
+                                    )
+                                }
+                            }
+                        }
+                    }
                 }
 
                 IconButton(
@@ -254,6 +293,12 @@ fun DeploymentCard(
                 DetailRow("H/H SET NX3220", deployment.hhSetNX3220, searchQuery)
                 DetailRow("S/U BATTS / CHARGER", formatUnit(deployment.suBattsCharger), searchQuery)
                 DetailRow("PA SYSTEM", formatUnit(deployment.paSystem), searchQuery)
+                if (!deployment.distanceFromDcr.isNullOrBlank()) {
+                    DetailRow("DISTANCE FROM DCR", deployment.distanceFromDcr, searchQuery)
+                }
+                if (!deployment.antennaHeightFeet.isNullOrBlank()) {
+                    DetailRow("ANTENNA HEIGHT", deployment.antennaHeightFeet, searchQuery)
+                }
                 if (!deployment.remarks.isNullOrBlank()) {
                     DetailRow("REMARKS", deployment.remarks, searchQuery)
                 }
@@ -382,11 +427,26 @@ private fun AntennaBox(
     count: String?,
     modifier: Modifier = Modifier
 ) {
+    val hasCount = !count.isNullOrBlank()
+    val cleanCount = if (hasCount) {
+        val trimmed = count!!.trim()
+        if (trimmed == "01") "1" else trimmed
+    } else null
+
     Box(
         modifier = modifier
             .clip(RoundedCornerShape(8.dp))
-            .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f))
-            .padding(horizontal = 8.dp, vertical = 6.dp)
+            .background(
+                if (hasCount) PoliceBlue100.copy(alpha = 0.8f)
+                else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.4f)
+            )
+            .border(
+                width = if (hasCount) 1.dp else 0.5.dp,
+                color = if (hasCount) PoliceBlue700.copy(alpha = 0.4f)
+                else MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.3f),
+                shape = RoundedCornerShape(8.dp)
+            )
+            .padding(horizontal = 9.dp, vertical = 6.dp)
     ) {
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -396,15 +456,31 @@ private fun AntennaBox(
             Text(
                 text = "📡 $label",
                 fontSize = 11.sp,
-                fontWeight = FontWeight.SemiBold,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                fontWeight = if (hasCount) FontWeight.Bold else FontWeight.Medium,
+                color = if (hasCount) PoliceNavy900 else MaterialTheme.colorScheme.onSurfaceVariant
             )
-            Text(
-                text = count?.let { "$it unit" } ?: "—",
-                fontSize = 11.sp,
-                fontWeight = FontWeight.ExtraBold,
-                color = if (count != null) PoliceNavy900 else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f)
-            )
+            if (hasCount) {
+                Box(
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(5.dp))
+                        .background(PoliceNavy900)
+                        .padding(horizontal = 6.dp, vertical = 2.dp)
+                ) {
+                    Text(
+                        text = if (cleanCount?.all { it.isDigit() } == true) "$cleanCount unit" else (cleanCount ?: "1"),
+                        fontSize = 11.sp,
+                        fontWeight = FontWeight.Black,
+                        color = PoliceGold
+                    )
+                }
+            } else {
+                Text(
+                    text = "—",
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.35f)
+                )
+            }
         }
     }
 }

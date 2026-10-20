@@ -332,12 +332,46 @@ fun AboutUsScreen(
                 }
             }
 
+            // APK Download & Installation Help Card
+            item {
+                Card(
+                    shape = RoundedCornerShape(14.dp),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text(text = "📥", fontSize = 18.sp)
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Text(
+                                text = "APK Download & Installation Guide",
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = PoliceNavy900
+                            )
+                        }
+                        Text(
+                            text = "APK डाउनलोड और फोन में इंस्टॉल करने का आसान तरीका:",
+                            fontSize = 11.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(
+                            text = "1. AI Studio के ऊपर दाईं ओर दिए गए Settings / Export मेनू पर क्लिक करें और 'Download APK' या 'Download ZIP' चुनें।\n2. फोन में APK डाउनलोड होने के बाद, फाइल मैनेजर (Downloads) में जाकर APK फाइल पर टैप करें।\n3. यदि फोन पूछे 'Install Unknown Apps', तो Chrome / File Manager के लिए Allow (चालू) कर दें।\n4. एक बार इंस्टॉल होने के बाद यह ऐप 100% ऑफलाइन काम करती है—इंटरनेट की आवश्यकता नहीं होती।",
+                            fontSize = 12.sp,
+                            color = MaterialTheme.colorScheme.onSurface,
+                            lineHeight = 18.sp
+                        )
+                    }
+                }
+            }
+
             // Developer Credit
             item {
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(top = 8.dp, bottom = 22.dp),
+                        .padding(top = 10.dp, bottom = 22.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Text(

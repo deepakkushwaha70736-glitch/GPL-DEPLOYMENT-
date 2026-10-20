@@ -27,10 +27,13 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Call
+import androidx.compose.material.icons.filled.CellTower
+import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.ContentCopy
-import androidx.compose.material.icons.filled.LocalPolice
+import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material.icons.filled.PhoneInTalk
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -41,10 +44,16 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Tab
+import androidx.compose.material3.TabRow
+import androidx.compose.material3.TabRowDefaults
+import androidx.compose.material3.TabRowDefaults.tabIndicatorOffset
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -61,6 +70,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.data.model.DirectoryContact
+import com.example.data.model.StationDistanceHeightItem
 import com.example.ui.theme.PoliceBlue100
 import com.example.ui.theme.PoliceBlue700
 import com.example.ui.theme.PoliceGold
@@ -72,10 +82,12 @@ import com.example.ui.theme.RadioRedBg
 @Composable
 fun DirectoryScreen(
     contacts: List<DirectoryContact>,
+    stationDistances: List<StationDistanceHeightItem> = emptyList(),
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
     val clipboardManager = LocalClipboardManager.current
+    var selectedSection by remember { mutableIntStateOf(0) } // 0 = Contacts, 1 = Station Distances & Towers
     var selectedCategory by remember { mutableStateOf("All") }
     var filterQuery by remember { mutableStateOf("") }
 
@@ -89,6 +101,15 @@ fun DirectoryScreen(
                     contact.number.contains(filterQuery)
         }
         matchesCategory && matchesQuery
+    }
+
+    val filteredStations = stationDistances.filter { item ->
+        if (filterQuery.isBlank()) true else {
+            item.name.contains(filterQuery, ignoreCase = true) ||
+                    item.dist.contains(filterQuery, ignoreCase = true) ||
+                    item.height.contains(filterQuery, ignoreCase = true) ||
+                    item.slNo.toString() == filterQuery.trim()
+        }
     }
 
     Column(
@@ -117,7 +138,7 @@ fun DirectoryScreen(
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Default.PhoneInTalk,
+                        imageVector = if (selectedSection == 0) Icons.Default.PhoneInTalk else Icons.Default.CellTower,
                         contentDescription = null,
                         tint = PoliceGold,
                         modifier = Modifier.size(24.dp)
@@ -126,13 +147,17 @@ fun DirectoryScreen(
                 Spacer(modifier = Modifier.width(12.dp))
                 Column {
                     Text(
-                        text = "📞 Police & Emergency Directory",
+                        text = if (selectedSection == 0) "📞 Police & Emergency Directory" else "🗼 Station Towers & Distances",
                         fontSize = 19.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color.White
                     )
                     Text(
-                        text = "Hathras District Control Rooms & CUG Numbers",
+                        text = if (selectedSection == 0) {
+                            "Hathras District Control Rooms & CUG Numbers"
+                        } else {
+                            "47 Police Stations: DCR Distance (KM) & Antenna Mast Height (FT)"
+                        },
                         fontSize = 12.sp,
                         color = PoliceBlue100.copy(alpha = 0.85f)
                     )
@@ -140,59 +165,273 @@ fun DirectoryScreen(
             }
         }
 
-        // Category Filter Tabs
-        Surface(
-            color = MaterialTheme.colorScheme.surface,
-            shadowElevation = 1.dp
+        // Section Tabs: Contacts vs Station Towers
+        TabRow(
+            selectedTabIndex = selectedSection,
+            containerColor = MaterialTheme.colorScheme.surface,
+            contentColor = PoliceNavy800,
+            indicator = { tabPositions ->
+                TabRowDefaults.SecondaryIndicator(
+                    modifier = Modifier.tabIndicatorOffset(tabPositions[selectedSection]),
+                    color = PoliceBlue700
+                )
+            }
         ) {
-            Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp)) {
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .horizontalScroll(rememberScrollState()),
-                    horizontalArrangement = Arrangement.spacedBy(6.dp)
-                ) {
-                    categories.forEach { cat ->
-                        val isSelected = selectedCategory == cat
-                        FilterChip(
-                            selected = isSelected,
-                            onClick = { selectedCategory = cat },
-                            label = {
-                                Text(
-                                    text = cat,
-                                    fontSize = 12.sp,
-                                    fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
+            Tab(
+                selected = selectedSection == 0,
+                onClick = { selectedSection = 0; filterQuery = "" },
+                text = {
+                    Text(
+                        text = "CUG Contacts (${contacts.size})",
+                        fontWeight = if (selectedSection == 0) FontWeight.Bold else FontWeight.Normal,
+                        fontSize = 13.sp
+                    )
+                }
+            )
+            Tab(
+                selected = selectedSection == 1,
+                onClick = { selectedSection = 1; filterQuery = "" },
+                text = {
+                    Text(
+                        text = "Station Towers (${stationDistances.size})",
+                        fontWeight = if (selectedSection == 1) FontWeight.Bold else FontWeight.Normal,
+                        fontSize = 13.sp
+                    )
+                }
+            )
+        }
+
+        // Search Bar for both tabs
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 14.dp, vertical = 8.dp)
+        ) {
+            OutlinedTextField(
+                value = filterQuery,
+                onValueChange = { filterQuery = it },
+                placeholder = {
+                    Text(
+                        text = if (selectedSection == 0) "Search contacts by name, role, number..." else "Search 47 stations by name, distance, height...",
+                        fontSize = 13.sp
+                    )
+                },
+                leadingIcon = {
+                    Icon(imageVector = Icons.Default.Search, contentDescription = null, tint = PoliceBlue700)
+                },
+                trailingIcon = {
+                    if (filterQuery.isNotEmpty()) {
+                        IconButton(onClick = { filterQuery = "" }) {
+                            Icon(imageVector = Icons.Default.Clear, contentDescription = "Clear")
+                        }
+                    }
+                },
+                singleLine = true,
+                shape = RoundedCornerShape(12.dp),
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = PoliceBlue700,
+                    unfocusedBorderColor = MaterialTheme.colorScheme.outlineVariant
+                ),
+                modifier = Modifier.fillMaxWidth()
+            )
+        }
+
+        if (selectedSection == 0) {
+            // Category Filter Chips for Contacts
+            Surface(
+                color = MaterialTheme.colorScheme.surface,
+                shadowElevation = 1.dp
+            ) {
+                Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .horizontalScroll(rememberScrollState()),
+                        horizontalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        categories.forEach { cat ->
+                            val isSelected = selectedCategory == cat
+                            FilterChip(
+                                selected = isSelected,
+                                onClick = { selectedCategory = cat },
+                                label = {
+                                    Text(
+                                        text = cat,
+                                        fontSize = 12.sp,
+                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
+                                    )
+                                },
+                                colors = FilterChipDefaults.filterChipColors(
+                                    selectedContainerColor = PoliceBlue700,
+                                    selectedLabelColor = Color.White
                                 )
-                            },
-                            colors = FilterChipDefaults.filterChipColors(
-                                selectedContainerColor = PoliceBlue700,
-                                selectedLabelColor = Color.White
                             )
-                        )
+                        }
                     }
                 }
             }
-        }
 
-        // Contact List
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxSize()
-                .testTag("directory_list"),
-            contentPadding = PaddingValues(horizontal = 14.dp, vertical = 10.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            items(
-                items = filteredContacts,
-                key = { "${it.title}_${it.number}" }
-            ) { contact ->
-                ContactCard(
-                    contact = contact,
-                    onDial = { dialNumber(context, contact.number) },
-                    onCopy = {
-                        clipboardManager.setText(AnnotatedString(contact.number))
-                        Toast.makeText(context, "Copied: ${contact.number}", Toast.LENGTH_SHORT).show()
+            // Contact List
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .testTag("directory_list"),
+                contentPadding = PaddingValues(horizontal = 14.dp, vertical = 10.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                items(
+                    items = filteredContacts,
+                    key = { "${it.title}_${it.number}" }
+                ) { contact ->
+                    ContactCard(
+                        contact = contact,
+                        onDial = { dialNumber(context, contact.number) },
+                        onCopy = {
+                            clipboardManager.setText(AnnotatedString(contact.number))
+                            Toast.makeText(context, "Copied: ${contact.number}", Toast.LENGTH_SHORT).show()
+                        }
+                    )
+                }
+            }
+        } else {
+            // Station Distances & Towers List (47 Stations from set_at_evry_stn_9551a076.pdf)
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .testTag("station_towers_list"),
+                contentPadding = PaddingValues(horizontal = 14.dp, vertical = 8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                item {
+                    Card(
+                        shape = RoundedCornerShape(12.dp),
+                        colors = CardDefaults.cardColors(containerColor = PoliceNavy900),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Column(modifier = Modifier.padding(14.dp)) {
+                            Text(
+                                text = "OFFICIAL HATHRAS DCR TOWER & ANTENNA ROSTER",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = PoliceGold,
+                                letterSpacing = 0.5.sp
+                            )
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(
+                                text = "जनपद हाथरस के सभी 47 थानों/चौकियों की DCR से दूरी एवं वायरलेस एंटीना ऊंचाई",
+                                fontSize = 13.sp,
+                                color = Color.White,
+                                fontWeight = FontWeight.Medium
+                            )
+                        }
                     }
+                }
+
+                items(
+                    items = filteredStations,
+                    key = { it.slNo }
+                ) { item ->
+                    StationTowerCard(
+                        item = item,
+                        onCopy = {
+                            val text = "${item.slNo}. ${item.name} — Distance to DCR: ${item.dist}, Antenna Height: ${item.height}"
+                            clipboardManager.setText(AnnotatedString(text))
+                            Toast.makeText(context, "Copied: ${item.name}", Toast.LENGTH_SHORT).show()
+                        }
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun StationTowerCard(
+    item: StationDistanceHeightItem,
+    onCopy: () -> Unit
+) {
+    Card(
+        shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        ),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(14.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.weight(1f)
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(40.dp)
+                        .clip(CircleShape)
+                        .background(PoliceNavy800),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = item.slNo.toString(),
+                        fontSize = 14.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White
+                    )
+                }
+
+                Spacer(modifier = Modifier.width(12.dp))
+
+                Column {
+                    Text(
+                        text = item.name,
+                        fontSize = 15.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                    Spacer(modifier = Modifier.height(4.dp))
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Box(
+                            modifier = Modifier
+                                .clip(RoundedCornerShape(6.dp))
+                                .background(PoliceNavy900)
+                                .padding(horizontal = 8.dp, vertical = 2.dp)
+                        ) {
+                            Text(
+                                text = "📍 DCR से: ${item.dist}",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = PoliceGold
+                            )
+                        }
+
+                        Box(
+                            modifier = Modifier
+                                .clip(RoundedCornerShape(6.dp))
+                                .background(PoliceBlue100)
+                                .padding(horizontal = 8.dp, vertical = 2.dp)
+                        ) {
+                            Text(
+                                text = "🗼 एंटीना: ${item.height}",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = PoliceNavy900
+                            )
+                        }
+                    }
+                }
+            }
+
+            IconButton(onClick = onCopy) {
+                Icon(
+                    imageVector = Icons.Default.ContentCopy,
+                    contentDescription = "Copy",
+                    tint = PoliceBlue700,
+                    modifier = Modifier.size(18.dp)
                 )
             }
         }
@@ -254,9 +493,9 @@ private fun ContactCard(
                     Spacer(modifier = Modifier.height(2.dp))
                     Text(
                         text = contact.number,
-                        fontSize = 14.sp,
-                        fontWeight = FontWeight.Black,
-                        color = if (contact.isTollFree) RadioRed else PoliceNavy800
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        color = if (contact.isTollFree) RadioRed else PoliceBlue700
                     )
                 }
             }
@@ -265,11 +504,12 @@ private fun ContactCard(
                 IconButton(onClick = onCopy) {
                     Icon(
                         imageVector = Icons.Default.ContentCopy,
-                        contentDescription = "Copy number",
+                        contentDescription = "Copy Number",
                         tint = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.size(18.dp)
                     )
                 }
+
                 Button(
                     onClick = onDial,
                     shape = CircleShape,
@@ -280,11 +520,15 @@ private fun ContactCard(
                 ) {
                     Icon(
                         imageVector = Icons.Default.Call,
-                        contentDescription = "Call",
-                        modifier = Modifier.size(16.dp)
+                        contentDescription = "Dial",
+                        modifier = Modifier.size(14.dp)
                     )
                     Spacer(modifier = Modifier.width(4.dp))
-                    Text(text = "Dial", fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                    Text(
+                        text = "Call",
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Bold
+                    )
                 }
             }
         }
@@ -299,6 +543,6 @@ private fun dialNumber(context: Context, number: String) {
         }
         context.startActivity(intent)
     } catch (e: Exception) {
-        Toast.makeText(context, "Cannot open dialer: ${e.message}", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "Could not open dialer", Toast.LENGTH_SHORT).show()
     }
 }
